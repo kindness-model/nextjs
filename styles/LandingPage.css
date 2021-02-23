@@ -1,0 +1,403 @@
+@charset "UTF-8";
+/*
+ * Theme Name:   Go Child
+ * Theme URI:    https://github.com/godaddy-wordpress/go
+ * Description:  Go Child Theme
+ * Author:       GoDaddy
+ * Author URI:   https://www.godaddy.com
+ * Template:     go
+ * Version:      1.0.0
+ * Requires PHP: 5.6
+ * License:      GPL-2.0
+ * License URI:  https://www.gnu.org/licenses/gpl-2.0.html
+ * Text Domain:  go
+ * Domain Path:  /languages
+ * Tags:         block-styles, custom-colors, custom-logo, custom-menu, e-commerce, editor-style, one-column, theme-options, threaded-comments, translation-ready, wide-blocks
+ *
+ * Copyright © 2019 GoDaddy Operating Company, LLC. All Rights Reserved.
+ */
+
+#wpadminbar {
+    display: none !important;
+}
+
+.body-text {
+    font-family: "Minion Pro";
+}
+
+#landing-page-container {
+    background: url("/images/paper-texture.png") center center fixed;
+    background-size: cover;
+}
+#landing-page-container .top-nav {
+    width: 100vw;
+    padding: 20px 40px;
+    background: transparent;
+    color: #ffffff;
+    font-family: "A Garamond Pro";
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+@media only screen and (max-width: 600px) {
+    #landing-page-container .top-nav {
+        justify-content: center;
+    }
+}
+#landing-page-container .top-nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+#landing-page-container .top-nav .nav-title {
+    font-size: 1.5em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+#landing-page-container .top-nav .nav-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+@media only screen and (max-width: 600px) {
+    #landing-page-container .top-nav .nav-items {
+        display: none;
+    }
+}
+#landing-page-container .top-nav .nav-items a {
+    display: block;
+    margin-right: 40px;
+}
+#landing-page-container .top-nav .nav-items a:last-child {
+    margin-right: 0;
+}
+#landing-page-container .splash-section {
+    color: #ffffff;
+    background: linear-gradient(90deg, rgba(158, 195, 53, 0.9), rgba(53, 195, 137, 0.9)),
+        url("/images/splash-bg.png") no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+}
+@supports (-webkit-touch-callout: none) {
+    #landing-page-container .splash-section {
+        background-attachment: scroll;
+    }
+}
+#landing-page-container .splash-section .splash-inner {
+    padding: 60px 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 760px;
+}
+@media only screen and (max-width: 600px) {
+    #landing-page-container .splash-section .splash-inner {
+        width: 100vw;
+    }
+}
+#landing-page-container .splash-section .splash-header {
+    font-family: "A Garamond Pro";
+    font-size: 5em;
+    line-height: 0.8em;
+    text-align: center;
+    padding-top: 20px;
+}
+#landing-page-container .splash-section .splash-header span::before {
+    content: "\A";
+    white-space: pre;
+}
+#landing-page-container .splash-section .splash-subheader {
+    padding-top: 20px;
+    font-size: 1.4em;
+    line-height: 1.3em;
+    text-align: center;
+}
+#landing-page-container .splash-section .cta-items {
+    font-family: "A Garamond Pro";
+    padding-top: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+@media only screen and (max-width: 600px) {
+    #landing-page-container .splash-section .cta-items {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+#landing-page-container .splash-section .cta-items .cta-item {
+    flex-grow: 1;
+    flex-basis: 0;
+    min-width: 200px;
+    background: #3d4b3c;
+    border-radius: 5px;
+    padding: 20px 40px 30px;
+}
+@media only screen and (max-width: 600px) {
+    #landing-page-container .splash-section .cta-items .cta-item {
+        width: 100%;
+    }
+}
+#landing-page-container .splash-section .cta-items .cta-item:first-child {
+    margin-right: 20px;
+}
+@media only screen and (max-width: 600px) {
+    #landing-page-container .splash-section .cta-items .cta-item:first-child {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+#landing-page-container .splash-section .cta-items .cta-item .cta-header {
+    font-family: "A Garamond Pro";
+    font-size: 1.7em;
+    text-align: center;
+}
+#landing-page-container .splash-section .cta-items .cta-buttons {
+    padding-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+#landing-page-container .splash-section .cta-items .cta-buttons .cta-button {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    flex-grow: 1;
+    flex-basis: 0;
+    background-color: #ce7a56;
+    border-radius: 5px;
+    margin-right: 10px;
+    text-align: center;
+    padding: 5px;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+#landing-page-container .splash-section .cta-items .cta-buttons .cta-button:last-child {
+    margin-right: 0;
+}
+#landing-page-container .splash-section .supporters {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#landing-page-container .splash-section .supporters .supporters-header {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "A Garamond Pro";
+    font-weight: 900;
+    font-size: 1em;
+    letter-spacing: 0.4em;
+    color: #3d4b3c;
+}
+#landing-page-container .splash-section .supporters .supporter-items {
+    max-width: 980px;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+@media only screen and (max-width: 600px) {
+    #landing-page-container .splash-section .supporters .supporter-items {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+#landing-page-container .splash-section .supporters .supporter-items .supporter-item {
+    flex-grow: 0;
+    display: flex;
+    justify-content: center;
+    max-width: 256px;
+    margin-right: 60px;
+}
+#landing-page-container .splash-section .supporters .supporter-items .supporter-item:last-child {
+    margin-right: 0;
+}
+@media only screen and (max-width: 600px) {
+    #landing-page-container .splash-section .supporters .supporter-items .supporter-item {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+#landing-page-container .splash-section .supporters .supporter-items img {
+    max-width: 100%;
+    opacity: 0.8;
+}
+#landing-page-container .subsplash-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(54, 66, 67, 0.8), rgba(54, 66, 67, 0.8)), url("/images/sub-splash.jpg") center left;
+    background-size: cover;
+    padding: 40px;
+}
+#landing-page-container .subsplash-section .subsplash-inner {
+    max-width: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#landing-page-container .subsplash-section .left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 60px;
+}
+#landing-page-container .subsplash-section .header {
+    color: #ffffff;
+    font-family: "A Garamond Pro";
+    font-size: 2.5em;
+    line-height: 1em;
+}
+#landing-page-container .subsplash-section .subheader {
+    padding: 20px 0;
+    color: #b1bfbf;
+    font-family: "Minion Pro";
+    font-size: 1.5em;
+}
+#landing-page-container .subsplash-section .reserve-button {
+    display: block;
+    text-decoration: none;
+    font-family: "A Garamond Pro";
+    font-weight: 900;
+    border-radius: 5px;
+    background-color: #9fcc77;
+    color: #ffffff;
+    padding: 5px 20px;
+}
+#landing-page-container .about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+}
+#landing-page-container .about-section .about-inner {
+    max-width: 500px;
+}
+#landing-page-container .about-section .header {
+    font-family: "A Garamond Pro";
+    font-size: 3em;
+    line-height: 1em;
+    color: #9fcc77;
+}
+#landing-page-container .about-section .body {
+    padding-top: 20px;
+    font-family: "Minion Pro";
+    color: #767676;
+    font-size: 2em;
+}
+#landing-page-container .about-section .instafeed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+    width: 100%;
+}
+#landing-page-container .about-section .instafeed .snapwidget-widget {
+    width: 100%;
+    max-width: 900px;
+}
+#landing-page-container .about-section .email-signup {
+    padding-top: 60px;
+}
+#landing-page-container .about-section .email-signup .email-signup-bg {
+    max-width: 1200px;
+    background: linear-gradient(rgba(233, 238, 241, 0.8), rgba(233, 238, 241, 0.8)),
+        url("/images/greenhouse.png") center center;
+    background-size: cover;
+    border-radius: 3px;
+    padding: 60px;
+    display: flex;
+    flex-direction: row;
+}
+#landing-page-container .about-section .email-signup .email-signup-inner {
+    flex-basis: 0;
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#landing-page-container .about-section .email-signup .email-signup-spacer {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+#landing-page-container .about-section .email-signup .header {
+    font-family: "A Garamond Pro";
+    font-size: 2.5em;
+    line-height: 1em;
+    color: #364243;
+}
+#landing-page-container .about-section .email-signup #mc_embed_signup {
+    width: 100%;
+}
+#landing-page-container .about-section .email-signup #mc_embed_signup .email {
+    padding-top: 10px;
+    width: 90%;
+}
+#landing-page-container .about-section .email-signup #mc_embed_signup .email input {
+    margin: 0;
+}
+#landing-page-container .about-section .email-signup .button {
+    margin-top: 20px;
+    display: block;
+    text-decoration: none;
+    font-family: "A Garamond Pro";
+    font-weight: 900;
+    border-radius: 5px;
+    background-color: #9fcc77;
+    color: #ffffff;
+    padding: 14px 40px;
+}
+#landing-page-container .about-section .footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #b1bfbf;
+    border-top: 1px solid rgba(177, 191, 191, 0.8);
+    margin-top: 60px;
+    padding: 20px;
+    font-family: "Minion Pro";
+}
+#landing-page-container .about-section .footer .social-icons {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+#landing-page-container .about-section .footer .social-icons a {
+    align-items: flex-start;
+    display: block;
+    height: 1.2em;
+    padding: 0;
+    margin-right: 20px;
+}
+#landing-page-container .about-section .footer .social-icons a img {
+    max-width: 100%;
+    max-height: 100%;
+    opacity: 0.5;
+}
+
+@font-face {
+    font-family: "Minion Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/fonts/MinionPro-Regular.eot?) format("eot"), url(/fonts/MinionPro-Regular.woff) format("woff"),
+        url(/fonts/MinionPro-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: "A Garamond Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/fonts/AGaramondPro-Regular.eot?) format("eot"), url(/fonts/AGaramondPro-Regular.woff) format("woff"),
+        url(/fonts/AGaramondPro-Regular.ttf) format("truetype");
+}
