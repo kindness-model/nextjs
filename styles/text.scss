@@ -1,0 +1,10 @@
+$serif: "A Garamond Pro";
+$sans-serif: "Minion Pro";
+
+$dark-color: black;
+$light-color: white;
+
+@mixin page-title(){
+    font-family: $serif;
+    font-size: 4em;
+}

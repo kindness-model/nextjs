@@ -1,17 +1,10 @@
+import NavBar from '../components/NavBar/NavBar';
+
 export default function LandingPage() {
   return (
     <div id="landing-page-container">
       <div className="splash-section">
-        <div className="top-nav">
-          <div className="nav-title"><a href="/">Kindness Farm</a></div>
-          <div className="nav-items">
-            <a href="/">Home</a>
-            <a href="/about">About</a>
-            <a href="/contribute-donate">Contribute</a>
-            <a href="/volunteer">Volunteer</a>
-            <a href="/contact">Contact</a>
-          </div>
-        </div>
+        <NavBar color='light'/>
 
         <div className="splash-inner">
           <div className="splash-header">

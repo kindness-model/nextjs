@@ -1,0 +1,54 @@
+@use '../../styles/text.scss';
+@use '../../styles/breakpoints.scss';
+
+.container{
+    &.dark{
+        color: text.$dark-color;
+    }
+    &.light{
+        color: text.$light-color;
+    }
+    width: 100vw;
+    padding: 20px 40px;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: text.$serif;
+    @media only screen and (max-width: breakpoints.$mobile) {
+        justify-content: center;
+    }
+}
+
+@mixin underline(){
+    &.dark{
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    &.light{
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+}
+
+.title {
+    font-size: 1.5em;
+    @include underline();
+}
+
+.items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    @include underline();
+
+    @media only screen and (max-width: breakpoints.$mobile) {
+        display: none;
+    }
+
+    a {
+        display: block;
+        margin-right: 40px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+@use '../styles/text.scss';
+
+.title{
+    padding-top: 80px;
+    @include text.page-title;
+    text-align: center;
+}
+
+.text{
+    font-family: text.$serif;
+    color: text.$dark-color;
+    font-size: 1.4em;
+    line-height: 1.6em;
+}
+

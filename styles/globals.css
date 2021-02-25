@@ -14,3 +14,20 @@ a {
 * {
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: "Minion Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/MinionPro-Regular.eot?) format("eot"), url(/fonts/MinionPro-Regular.woff) format("woff"),
+      url(/fonts/MinionPro-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "A Garamond Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/AGaramondPro-Regular.eot?) format("eot"), url(/fonts/AGaramondPro-Regular.woff) format("woff"),
+      url(/fonts/AGaramondPro-Regular.ttf) format("truetype");
+}
